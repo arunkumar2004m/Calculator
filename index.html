@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="./assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/index.css">
+
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div class="calculator">
+        <input type=" text" id="display">
+        <br>
+        <br>
+
+        <button onclick="clearDisplay()"class="clear">Clear</button>
+        <button type="button" class="btn btn-outline-danger" onclick="deleteLast()">Delete</button>
+
+
+
+
+
+
+
+        <div id="last">
+            <div class="last">
+                <button onclick="appendNumber('7')">7</button>
+                <button onclick="appendNumber('8')">8</button>
+                <button onclick="appendNumber('9')">9</button>
+            </div>
+            <div class="operator">
+            <button onclick="appendOperator('/')">/</button>
+            </div>
+        </div>
+
+        <div id="mid">
+            <div class="mid">
+                <button onclick="appendNumber('4')">4</button>
+                <button onclick="appendNumber('5')">5</button>
+                <button onclick="appendNumber('6')">6</button>
+            </div>
+            <div class="operator">
+     <button onclick="appendOperator('*')">*</button>
+            </div>
+        </div>
+
+        <div id="start">
+            <div class="start">
+                <button onclick="appendNumber('1')">1</button>
+                <button onclick="appendNumber('2')">2</button>
+                <button onclick="appendNumber('3')">3</button>
+            </div>
+            <div class="operator">
+                 <button onclick="appendOperator('-')">-</button>
+            </div>
+        </div>
+
+
+        <div id="result">
+
+            <button onclick="appendNumber('.')">.</button>
+             <button onclick="appendNumber('0')">0</button>
+            <button onclick="result('=')">=</button><button onclick="appendOperator('+')">+</button>
+
+
+        </div>
+</body>
+<script src="./assets/script.js"></script>
+
+</html>
